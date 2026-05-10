@@ -11,7 +11,7 @@ const clients = [
 
 export function TNClients() {
   return (
-    <section className="py-12 border-y border-border/30">
+    <section className="py-12 border-y border-primary/10 bg-transparent backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-6">
         <p className="text-center text-sm text-muted-foreground mb-8 uppercase tracking-widest">
           Trusted by Leading Brands
