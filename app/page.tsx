@@ -9,21 +9,25 @@ import { TNTestimonials } from "@/components/tn-testimonials"
 import { TNAbout } from "@/components/tn-about"
 import { TNCTA } from "@/components/tn-cta"
 import { TNFooter } from "@/components/tn-footer"
+import { SmokeBackground } from "@/components/smoke-background"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
-      <TNNavbar />
-      <TNHero />
-      <TNClients />
-      <TNServices />
-      <TNWhyUs />
-      <TNPortfolio />
-      <TNProcess />
-      <TNTestimonials />
-      <TNAbout />
-      <TNCTA />
-      <TNFooter />
+    <main className="min-h-screen bg-background relative">
+      <SmokeBackground />
+      <div className="relative z-10">
+        <TNNavbar />
+        <TNHero />
+        <TNClients />
+        <TNServices />
+        <TNWhyUs />
+        <TNPortfolio />
+        <TNProcess />
+        <TNTestimonials />
+        <TNAbout />
+        <TNCTA />
+        <TNFooter />
+      </div>
     </main>
   )
 }
