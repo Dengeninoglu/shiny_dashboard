@@ -1,6 +1,6 @@
 import { TNNavbar } from "@/components/tn-navbar"
 import { TNHero } from "@/components/tn-hero"
-import { TNClients } from "@/components/tn-clients"
+
 import { TNServices } from "@/components/tn-services"
 import { TNWhyUs } from "@/components/tn-why-us"
 import { TNPortfolio } from "@/components/tn-portfolio"
@@ -18,7 +18,6 @@ export default function Home() {
       <div className="relative z-10">
         <TNNavbar />
         <TNHero />
-        <TNClients />
         <TNServices />
         <TNWhyUs />
         <TNPortfolio />
