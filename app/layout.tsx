@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Script from "next/script"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,6 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <script 
+          src="https://esnaf-local-seo.vercel.app/api/seo-pixel/e2215b31-d3c0-47e8-acbb-ff42fa1e8b3d" 
+          async />
+      </head>
       <body className={`font-sans antialiased ${inter.variable}`}>
         {children}
         <SpeedInsights />
